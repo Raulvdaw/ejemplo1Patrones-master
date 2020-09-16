@@ -1,0 +1,17 @@
+/*input incorrecto:*/
+
+input:invalid{    color:red;}
+
+   /*input correcto:*/
+
+   input:valid{ color:green;  }
+
+   /*campo requerido:*/
+
+   input[required]{ background-color:lightblue; }
+   input[required]:valid{ background-color:lightcoral; }
+   input[required]:invalid{ background-color:rgb(228, 231, 22); }
+
+/* campo con cursor*/
+
+   input:focus{  border-color:purple;   }

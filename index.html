@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>Ejemplo1 Patrones</title>
+    <link rel="stylesheet" href="css/estilo.css">
+  </head>
+  <body>
+      <form action="*">
+          
+     
+        <label for="patron1">Patron entre 5 y 10
+        <input type="text" id="patron1" placeholder="a1a1a1" pattern="[0-9a-z]{5,10}"><br><br>
+        </label>
+
+        <label for="patron2">Patron un solo número
+        <input type="text" id="patron2" placeholder="5" pattern="[1-5]{1}"><br><br>
+        </label>
+
+        <label for="patron4">apartado D
+        <input type="text" id="patron4" placeholder="DAM1,DAM2,DAW1,DAW2,SMR1,SMR2,ASIR1,ASIR2" pattern="DA[M,W][1-2]|ASIR[1-2|SMR[1-2]"><br><br>
+        </label>
+
+        <!-- CORREO GMAIL: ENTRE 3-50 CARACTERES, empieza por minúscula,-->
+        <label for="correoGmail">correo gmail    
+        <input required type="text" title="utiliza correo de gmail" id="correoGmail" placeholder="aaa@gmail.com" pattern=[a-z][A-Z,a-z,0-9]{2,49}@gmail.com><br><br>
+        </label>
+
+        <!-- 16 números en grupo de 4, puede ir todo junto, pueden ir separados por - o espacios en blanco -->
+       <label for="visa">Tarjeta crédito
+       <input type="text" required title="Nº tarjeta crédito" id="visa" placeholder="xxxx xxxx xxxx xxxx"  pattern="[0-9]{4}([-, ]?)[0-9]{4}\1[0-9]{4}\1[0-9]{4}"><br><br>
+        </label>
+
+      <input type="submit" value="aceptar"> 
+    </form>  
+    
+  </body>
+</html>
